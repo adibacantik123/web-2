@@ -1,0 +1,28 @@
+#Tugas 1 Pratikum web
+
+## 1. Apa yang dimaksud dengan dokumen root?  
+   Dokumen root adalah folder utama tempat file-file website disimpan. Kalau pakai XAMPP, biasanya ada di C:\xampp\htdocs. File di dalam folder ini bisa diakses lewat browser.
+
+## 2. Pada Apache web server, apakah dokumen root harus di C:\xampp\htdocs?  
+   Secara default iya, tapi sebenarnya kita bisa mengubahnya di pengaturan Apache (httpd.conf). Jadi, kalau mau pakai folder lain juga bisa, asal dikonfigurasi dengan benar.
+
+## 3. Penjelasan singkat tentang perintah Git:  
+   - git init → Membuat repository Git di folder proyek.  
+   - git clone → Mengambil (download) repository dari GitHub ke komputer lokal.  
+   - git remote → Menghubungkan repository lokal ke repository di GitHub/GitLab.  
+   - git add → Menambahkan file yang diubah ke daftar yang akan disimpan.  
+   - git commit → Menyimpan perubahan dengan pesan tertentu.  
+   - git push → Mengirim perubahan dari lokal ke repository di GitHub.  
+   - git checkout → Berpindah antara versi atau branch dalam repository.  
+
+## 4. Apa bedanya GitHub dan GitLab?  
+   - **GitHub** lebih terkenal dan banyak dipakai, cocok buat kolaborasi dengan komunitas.  
+   - **GitLab** punya fitur CI/CD bawaan yang lebih lengkap, sering dipakai untuk proyek internal perusahaan.  
+
+## 5. Apa bedanya variable user dan variable system?  
+   - **Variable user** cuma berlaku untuk satu pengguna tertentu.  
+   - **Variable system** berlaku untuk seluruh sistem dan semua pengguna di komputer itu.  
+
+## 6. Apa persamaan variable system dan variable constant?  
+   - Sama-sama menyimpan nilai yang penting dalam program.  
+   - Biasanya nilainya tidak banyak berubah, atau memang sengaja dibuat tetap.
