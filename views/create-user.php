@@ -29,6 +29,7 @@ $users = User::get();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,6 +41,7 @@ $users = User::get();
     <link href="../public/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand ps-3" href="dashboard.php">praktikum 06</a>
@@ -56,7 +58,9 @@ $users = User::get();
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#!">Settings</a></li>
                     <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
                     <li><a class="dropdown-item" href="#!">Logout</a></li>
                 </ul>
             </li>
@@ -77,7 +81,7 @@ $users = User::get();
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    afina yasyifa
+                    Adibatul Hasanah
                 </div>
             </nav>
         </div>
@@ -96,37 +100,37 @@ $users = User::get();
                             Add user
                         </div>
                         <div class="card-body">
-                        <form action="create-user.php" method="POST">
-                            <div class="mb-3">
-                                <label for="firstname" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstname" name="firstname" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="lastname" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastname" name="lastname" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label d-block">Gender</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="gender" id="laki-laki" value="laki-laki">
-                                    <label for="laki-laki" class="form-check-label">Laki-laki</label>
+                            <form action="create-user.php" method="POST">
+                                <div class="mb-3">
+                                    <label for="firstname" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstname" name="firstname" required>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="gender" id="perempuan" value="perempuan">
-                                    <label for="perempuan" class="form-check-label">Perempuan</label>
+                                <div class="mb-3">
+                                    <label for="lastname" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" required>
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="age" class="form-label">Age</label>
-                                <input type="number" class="form-control" id="age" name="age" min="0" max="100" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="weight" class="form-label">Weight</label>
-                                <input type="number" class="form-control" id="weight" name="weight" min="100" max="300" required>
-                            </div>
-                            <a href="List-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
-                            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
-                        </form>
+                                <div class="mb-3">
+                                    <label class="form-label d-block">Gender</label>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="gender" id="laki-laki" value="laki-laki">
+                                        <label for="laki-laki" class="form-check-label">Laki-laki</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="gender" id="perempuan" value="perempuan">
+                                        <label for="perempuan" class="form-check-label">Perempuan</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="age" class="form-label">Age</label>
+                                    <input type="number" class="form-control" id="age" name="age" min="0" max="100" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight" class="form-label">Weight</label>
+                                    <input type="number" class="form-control" id="weight" name="weight" min="100" max="300" required>
+                                </div>
+                                <a href="List-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
+                            </form>
 
                         </div>
                     </div>
@@ -151,4 +155,5 @@ $users = User::get();
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="../public/js/datatables-simple-demo.js"></script>
 </body>
+
 </html>
